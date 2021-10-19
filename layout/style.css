@@ -508,6 +508,123 @@ html{
 }
 
 
+/*===========slider========*/
+
+
+
+.slider__inner{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.slider__title{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 64px;
+    color: #000;
+    text-align: center;
+}
+
+.slider__wrapper{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.slider__items{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.slider__item{
+    padding: 30px 40px;
+    background: #fff;
+    box-shadow: -1px 13px 20px #F0F2F4;
+    border-radius: 5px;
+    width: 408px;
+    margin-right: 44px;
+}
+
+.slider__item:last-child{
+    margin-right: 0;
+}
+
+
+
+.slider__logo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.slider__text{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #324148;
+}
+
+.slider__nav{
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 15px;
+}
+
+.btn__nav{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background: #13AA57;
+    box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
+    border-radius: 4px;
+    border: 1px solid #13AA57;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 30px;
+    transition: all 0.3s linear;
+
+
+
+}
+
+.btn__nav:hover {
+    background: #fff;
+}
+.btn__nav:hover.btn__nav img{
+    filter: invert(51%) sepia(43%) saturate(1475%) hue-rotate(107deg) brightness(87%) contrast(85%);
+}
+
+
+
+.btn__nav.btn_rot img{
+    transform: rotate(180deg);
+}
+
+
 
 
 
