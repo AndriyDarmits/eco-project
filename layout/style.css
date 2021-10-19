@@ -214,6 +214,141 @@ html{
 
 }
 
+/*=======whatWEdo*/
+
+.container__aboutUs{
+    max-width: 922px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.aboutUs__title{
+    font-size: 46px;
+    line-height: 65px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.aboutUs__whatdo{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 129px;
+}
+
+.aboutUs__whatdo:last-child{
+    margin-bottom: 0;
+}
+
+
+.eco__img img{
+    display: block;
+}
+
+
+.eco__title{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 28.6px;
+    color: #000;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 3px;
+
+}
+.eco__title span{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 77.64px;
+    color: #13AA57;
+    margin: 0 21px;
+}
+
+.eco__content p{
+    font-size: 16px;
+    line-height: 23px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.eco__content .eco__link{
+    background-color: #13AA57;
+    border-radius: 5px;
+    width: 292px;
+    height: 48px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+
+    filter: drop-shadow(0px 13px 20px rgba(118, 196, 125, 0.411204));
+    margin-left: 19px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+
+}
+
+.eco__content .eco__link:hover{
+    background-color: #127b42;
+}
+
+.eco__where{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.eco__where img{
+    margin-right: 23px;
+}
+
+.eco__where .eco__where-link{
+    color: #13AA57;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.eco__where .eco__where-link:hover{
+    text-decoration: none;
+}
+
+.aboutUs{
+    position: relative;
+    margin-bottom: 120px;
+}
+.bg__aboutUs{
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%);
+    min-width: 100%;
+
+}
 
 
 
