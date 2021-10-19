@@ -121,6 +121,100 @@ html{
 }
 
 
+/*-------intro-----------*/
+
+
+.intro{
+    padding-top: 117.2px;
+    position: relative;
+    margin-bottom: 143px;
+}
+
+.intro__inner{
+    margin-top: 99px;
+
+}
+
+
+
+
+.intro__title{
+    font-size: 45px;
+    line-height: 54px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.intro__text{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #263238;
+    margin-bottom: 30px;
+}
+
+
+.intro__link{
+    background-color: #13AA57;
+    border-radius: 5px;
+    width: 292px;
+    height: 48px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+
+}
+
+.intro__link:hover{
+    background-color: #127b42;
+}
+
+
+
+
+
+
+
+.intro__inner .intro__bg{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: -1;
+}
+.intro__inner .intro__boy{
+    position: absolute;
+    top: 278px;
+    right: 135px;
+    z-index: -1;
+
+}
+.intro__inner .intro__cicle{
+    position: absolute;
+    top: 210px;
+    right: 454px;
+    z-index: -1;
+
+}
+.intro__inner .intro__leaf{
+    position: absolute;
+    top: 293px;
+    right: 0;
+    z-index: -1;
+
+}
+
+
 
 
 
