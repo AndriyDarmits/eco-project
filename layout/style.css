@@ -550,6 +550,18 @@ html{
 
 }
 
+.slider__items::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%) center no-repeat;
+    background-size: cover
+}
+
+
+
 .slider__item{
     padding: 30px 40px;
     background: #fff;
