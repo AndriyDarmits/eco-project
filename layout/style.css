@@ -1067,6 +1067,12 @@ background:  rgba(19, 170, 87, 0.8);
     .article__inner:last-child{
         margin-bottom: 0;
     }
+    /*========SLIDER============*/
+
+    .slider__nav{
+        justify-content: center;
+
+    }
 
 
     /*===========DESC=============*/
@@ -1123,5 +1129,29 @@ background:  rgba(19, 170, 87, 0.8);
 }
 
 
+@media screen and ( max-width: 380px){
+    .ecoArticle__title{
+        font-size: 20px;
+        line-height: 20px;
+    }
 
+    .desc__form{
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+
+    }
+
+    .desc__input[placeholder]{
+        margin: 0 0 15px 0;
+    }
+
+    .desc__input{
+        margin-bottom: 15px;
+    }
+}
 
