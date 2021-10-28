@@ -18,6 +18,8 @@ html{
    flex-direction: column;
     display: flex;
     overflow: hidden;
+    transition: top 0.2s linear;
+
 
 
 
@@ -94,14 +96,14 @@ html{
 
 
 }
+
 .header__list{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    position: relative;
-    z-index: 3;
+
 }
 
 .navList__item{
@@ -865,6 +867,11 @@ background:  rgba(19, 170, 87, 0.8);
 
 @media (max-width: 795px) {
 
+    .wrapper.active{
+        position: absolute;
+        top: 220px;
+    }
+
     .header{
         position: fixed;
     }
@@ -883,8 +890,9 @@ background:  rgba(19, 170, 87, 0.8);
     z-index: 3;
 
     }
-    .header__burger span {
+    .header__burger-span {
     position: absolute;
+    content: "";
     background: #000;
     left: 0;
     width: 100%;
@@ -892,6 +900,10 @@ background:  rgba(19, 170, 87, 0.8);
     top: 50%;
     transform: translateY(-50%);
     transition: all .3s linear;
+    }
+
+    header__burger.active .header__burger-span{
+        opacity:0;
     }
 
     .header__burger:before, .header__burger:after {
@@ -906,11 +918,53 @@ background:  rgba(19, 170, 87, 0.8);
     .header__burger:before {
     top: 0;
 }
-    .header__burger:after {
+
+    .header__burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+
+
+    }
+    .header__burger:after{
     bottom: 0;
+}
+    .header__burger.active:after{
+    transform: rotate(-45deg);
+        bottom: 9px;
+
+
+
 }
     .header__menu{
         display: none;
+        width: 100%;
+        position: fixed;
+        top: calc(100% + 74.2px);
+        left: 0;
+        text-align: center;
+        height: 40vh;
+        z-index: 1000;
+        margin-top: 74.2px;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+
+    }
+
+    .header__menu.active{
+        display: flex;
+        top: 0;
+    }
+
+    .header__list{
+        display: block;
+    }
+
+    .navList__item{
+        display: block;
+        margin-bottom: 30px;
     }
 
 
@@ -1124,12 +1178,10 @@ background:  rgba(19, 170, 87, 0.8);
 
 }
 
-@media screen and ( max-width: 450px){
-    /* coming soon......*/
-}
 
 
-@media screen and ( max-width: 380px){
+
+@media screen and (max-width: 380px){
     .ecoArticle__title{
         font-size: 20px;
         line-height: 20px;
@@ -1153,5 +1205,7 @@ background:  rgba(19, 170, 87, 0.8);
     .desc__input{
         margin-bottom: 15px;
     }
-}
 
+
+}
+/*to do : create function. which will add .active class to .header__burger and .wrapper classes*/
