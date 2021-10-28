@@ -902,7 +902,7 @@ background:  rgba(19, 170, 87, 0.8);
     transition: all .3s linear;
     }
 
-    header__burger.active .header__burger-span{
+    .header__burger.active .header__burger-span{
         opacity:0;
     }
 
@@ -950,6 +950,7 @@ background:  rgba(19, 170, 87, 0.8);
         justify-content: center;
         -ms-align-items: center;
         align-items: center;
+
 
     }
 
